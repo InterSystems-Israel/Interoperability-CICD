@@ -4,7 +4,7 @@ Class dc.Demo.Production Extends Ens.Production
 XData ProductionDefinition
 {
 <Production Name="dc.Demo.Production" TestingEnabled="true" LogGeneralTraceEvents="false">
-  <Description>description from june 5 11:35</Description>
+  <Description>description from June 5 1244</Description>
   <ActorPoolSize>2</ActorPoolSize>
   <Item Name="dc.Demo.RedditService" Category="" ClassName="dc.Demo.RedditService" PoolSize="1" Enabled="true" Foreground="false" Comment="Service to fetch data from Reddit s" LogTraceEvents="true" Schedule="">
     <Setting Target="Adapter" Name="Feed">/new/</Setting>
