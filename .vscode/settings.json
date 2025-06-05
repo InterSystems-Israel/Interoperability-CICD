@@ -1,20 +1,7 @@
 {
-    "files.associations": {
-        "iris.script": "objectscript"
-      },
-    "objectscript.conn" :{
-      "ns": "INTEROP",
-      "username": "_SYSTEM",
-      "password": "SYS",
-      "docker-compose": {
-        "service": "iris",
-        "internalPort": 80
-      },
-      "active": true,
-      "links": {
-        "Production": "http://localhost/play/csp/healthshare/interop/EnsPortal.ProductionConfig.zen?PRODUCTION=dc.Demo.Production",
-        "Rule": "http://localhost/play/ui/interop/rule-editor/index.html?$NAMESPACE=INTEROP&rule=dc.Demo.FilterPostsRoutingRule"
-      }
+    "objectscript.conn": {
+        "server": "playing",
+        "ns": "INTEROP",
+        "active": true
     }
-
 }
