@@ -1,21 +1,19 @@
 {
     "files.associations": {
-
-        "Dockerfile*": "dockerfile",
         "iris.script": "objectscript"
       },
     "objectscript.conn" :{
-      "ns": "USER",
+      "ns": "INTEROP",
       "username": "_SYSTEM",
       "password": "SYS",
       "docker-compose": {
         "service": "iris",
-        "internalPort": 52773
+        "internalPort": 80
       },
-      "active": false,
+      "active": true,
       "links": {
-        "Production": "http://localhost:${port}/csp/user/EnsPortal.ProductionConfig.zen?PRODUCTION=dc.Demo.Production",
-        "Rule": "http://localhost:${port}/csp/user/EnsPortal.RuleEditor.zen?RULE=dc.Demo.FilterPostsRoutingRule"
+        "Production": "http://localhost/play/csp/healthshare/interop/EnsPortal.ProductionConfig.zen?PRODUCTION=dc.Demo.Production",
+        "Rule": "http://localhost/play/ui/interop/rule-editor/index.html?$NAMESPACE=INTEROP&rule=dc.Demo.FilterPostsRoutingRule"
       }
     }
 
